@@ -5,9 +5,12 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@fullcalendar/common": "^5.11.4",
     "@fullcalendar/core": "^6.1.5",
     "@fullcalendar/daygrid": "^6.1.5",
+    "@fullcalendar/interaction": "^6.1.6",
     "@fullcalendar/list": "^6.1.5",
+    "@fullcalendar/react": "^6.1.6",
     "@fullcalendar/timegrid": "^6.1.5",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.12.1",
@@ -26,7 +29,6 @@
     "react-dom": "^18.2.0",
     "react-pro-sidebar": "^0.7.1",
     "react-router-dom": "^6.10.0",
-    "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
     "yup": "^1.1.1"
   },
@@ -53,5 +55,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
   }
 }

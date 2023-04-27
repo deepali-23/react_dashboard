@@ -1,15 +1,17 @@
 import { useState } from "react";
-import FullCalendar, { formatDate } from "@fullcalendar/react";
-import dayGridPlugin from "@fullcalendar/daygrid";
-import timeGridPlugin from "@fullcalendar/timegrid";
+import * as FullCalendar from "@fullcalendar/core";
 import interactionPlugin from "@fullcalendar/interaction";
+import timeGridPlugin from "@fullcalendar/timegrid";
+import dayGridPlugin from "@fullcalendar/daygrid";
 import listPlugin from "@fullcalendar/list";
+import Calendar from "@fullcalendar/react";
+import { formatDate } from "@fullcalendar/common";
 import { Box, List, ListItem, ListItemText, Typography, useTheme } from "@mui/material";
 import Header from "../../components/Header";
 import { tokens } from "../../theme";
-const Calendar = () => {
-  const theme = useTheme();
 
+const Calendars = () => {
+  const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const [currentEvents, setCurrentEvents] = useState([]);
   const handleDataClick = (selected) => {
@@ -50,4 +52,4 @@ const Calendar = () => {
     </Box>
   );
 };
-export default Calendar;
+export default Calendars;
