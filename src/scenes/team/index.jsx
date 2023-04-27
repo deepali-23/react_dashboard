@@ -35,20 +35,50 @@ const Team = () => {
             borderRadius="4px"
           >
             {access === "admin" && <AdminPanelSettingsOutlinedIcon />}
-            {access === "admin" && <AdminPanelSettingsOutlinedIcon />}
+            {access === "manager" && <SecurityOutlinedIcon />}
 
-            {access === "admin" && <AdminPanelSettingsOutlinedIcon />}
+            {access === "user" && <LockOpenOutlinedIcon />}
+            <Typography color={colors.grey[100]} sx={{ ml: "5px" }}>
+              {access}
+            </Typography>
           </Box>
         );
       },
     },
   ];
   return (
-    <Box>
+    <Box m="20px">
       <Header title="TEAM" subtitle="Managing the Team Members" />
-      <Box>
+      <Box
+        m="40px 0 0 0"
+        height="75vh"
+        sx={{
+          "& .MuiDataGrid-root": {
+            border: "none",
+            },
+            "& .MuiDataGrid-cell": {
+                borderBottom:"none"
+            },
+            "& .name-column--cell": {
+                color:colors.greenAccent[300]
+            },
+            "& .MuiDataGrid-columnHeaders": {
+                backgroundColor: colors.blueAccent[700],
+                borderBottom:"none"
+            },
+            "& .MuiDataGrid-virtualScroller": {
+                backgroundColor: colors.primary[400]
+            },
+            "& .MuiDataGrid-footerContainer": {
+                bordeTop: "none",
+                backgroundColor:colors.blueAccent[700]
+            }
+        }}
+      >
         <DataGrid rows={mockDataTeam} columns={columns} />
       </Box>
     </Box>
   );
 };
+
+export default Team
