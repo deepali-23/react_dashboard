@@ -8,7 +8,7 @@ import Team from "./scenes/team";
 import Calendar from "./scenes/calendar";
 import Invoices from "./scenes/invoices";
 import Contacts from "./scenes/contacts";
-// import Bar from "./scenes/bar";
+import Bar from "./scenes/bar";
 import Form from "./scenes/form";
 // import Line from "./scenes/line";
 // import Pie from "./scenes/pie";
@@ -36,7 +36,7 @@ export default function App() {
               {/* <Route path="/line" element={<Line />} /> */}
               <Route path="/form" element={<Form />} />
               <Route path="/invoices" element={<Invoices />} />
-              {/* <Route path="/bar" element={<Bar />} /> */}
+              <Route path="/bar" element={<Bar />} />
             </Routes>
           </main>
         </div>
