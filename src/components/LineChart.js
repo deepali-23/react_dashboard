@@ -54,11 +54,11 @@ const LineChart = ({ isDashboard }) => {
         reverse: false,
       }}
       yFormat=" >-.2f"
+      curve="catmullRom"
       axisTop={null}
       axisRight={null}
       axisBottom={{
         orient: "bottom",
-
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
